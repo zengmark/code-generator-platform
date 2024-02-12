@@ -1,5 +1,7 @@
 ### Custom Template
 .idea
+generated
+target
 *.iml
 
 ### Java template
