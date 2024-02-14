@@ -1,11 +1,13 @@
 package com.codegen;
 
-import com.codegen.maker.cli.CommandExecutor;
+import com.codegen.maker.generator.main.MainGenerator;
+import freemarker.template.TemplateException;
+
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) {
-//        args = new String[]{"generate", "-l", "-a", "-o"};
-        CommandExecutor commandExecutor = new CommandExecutor();
-        commandExecutor.doExecute(args);
+    public static void main(String[] args) throws TemplateException, IOException, InterruptedException {
+        MainGenerator mainGenerator = new MainGenerator();
+        mainGenerator.doGenerate();
     }
 }

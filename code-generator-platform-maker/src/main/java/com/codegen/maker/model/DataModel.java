@@ -1,12 +1,18 @@
 package com.codegen.maker.model;
 
 import lombok.Data;
+import lombok.experimental.Accessors;
 
 /**
  * 动态模版配置
  */
 @Data
 public class DataModel {
+
+    /**
+     * 是否需要生成 .gitignore 文件
+     */
+    private boolean needGit;
 
     /**
      * 是否生成循环
