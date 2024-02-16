@@ -1,7 +1,6 @@
 package com.codegen.maker.generator.file;
 
 import cn.hutool.core.io.FileUtil;
-import com.codegen.maker.model.DataModel;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -41,10 +40,10 @@ public class DynamicFileGenerator {
         Template template = configuration.getTemplate(templateName);
 
         // 创建数据模型
-        DataModel dataModel = new DataModel();
-        dataModel.setAuthor("yupi");
-        dataModel.setLoop(false);
-        dataModel.setOutputText("求和结果：");
+//        DataModel dataModel = new DataModel();
+//        dataModel.setAuthor("yupi");
+//        dataModel.setLoop(false);
+//        dataModel.setOutputText("求和结果：");
 
         // 如果输出文件目录不存在,就创建文件
         if(!FileUtil.exist(outputPath)){

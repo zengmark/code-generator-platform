@@ -1,0 +1,24 @@
+{
+    "name": "acm-template-generator",
+    "description": "ACM 示例模板生成器",
+    "fileConfig": {
+        "sourceRootPath": "D:/CodeStudy/javacode/code-generator-platform/code-generator-platform-samples/acm-template",
+        "files": [
+            {
+                "inputPath": "src/com/codegen/acm/MainTemplate.java",
+                "outputPath": "src/com/codegen/acm/MainTemplate.java.ftl",
+                "type": "file",
+                "generateType": "dynamic"
+            }
+        ]
+    },
+    "modelConfig": {
+        "models": [
+            {
+                "fieldName": "outputText",
+                "type": "String",
+                "defaultValue": "sum = "
+            }
+        ]
+    }
+}

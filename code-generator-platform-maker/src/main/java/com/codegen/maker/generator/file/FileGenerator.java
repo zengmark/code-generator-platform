@@ -1,6 +1,5 @@
 package com.codegen.maker.generator.file;
 
-import com.codegen.maker.model.DataModel;
 import freemarker.template.TemplateException;
 
 import java.io.File;
@@ -33,11 +32,4 @@ public class FileGenerator {
         DynamicFileGenerator.doGenerate(inputDynamicFilePath, outputDynamicFilePath, model);
     }
 
-    public static void main(String[] args) throws TemplateException, IOException {
-        DataModel dataModel = new DataModel();
-        dataModel.setAuthor("mark.zeng");
-        dataModel.setLoop(false);
-        dataModel.setOutputText("求和结果：");
-        doGenerate(dataModel);
-    }
 }
