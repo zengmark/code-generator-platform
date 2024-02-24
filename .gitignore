@@ -3,6 +3,7 @@
 generated
 target
 *.iml
+application-local.yml
 
 ### Java template
 # Compiled class file

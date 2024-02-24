@@ -1,13 +1,5 @@
 package com.codegen.maker.generator.main;
 
-import cn.hutool.core.io.FileUtil;
-import cn.hutool.core.io.resource.ClassPathResource;
-import cn.hutool.core.util.StrUtil;
-import com.codegen.maker.generator.JarGenerator;
-import com.codegen.maker.generator.ScriptGenerator;
-import com.codegen.maker.generator.file.DynamicFileGenerator;
-import com.codegen.maker.meta.Meta;
-import com.codegen.maker.meta.MetaManager;
 import freemarker.template.TemplateException;
 
 import java.io.File;
@@ -119,5 +111,10 @@ public class MainGenerator extends GenerateTemplate{
         FileUtil.copy(sourceCopyDestPath, distOutputPath, true);*/
         MainGenerator mainGenerator = new MainGenerator();
         mainGenerator.doGenerate();
+    }
+
+    @Override
+    protected String buildDist(String outputPath, String sourceCopyDestPath, String jarPath, String shellOutputFilePath) {
+        return super.buildDist(outputPath, sourceCopyDestPath, jarPath, shellOutputFilePath);
     }
 }
