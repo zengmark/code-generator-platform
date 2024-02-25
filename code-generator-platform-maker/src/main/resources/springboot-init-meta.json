@@ -1,5 +1,5 @@
 {
-    "name": "springboot-init-generator",
+    "projectName": "springboot-init-generator",
     "description": "Spring Boot 模板项目生成器",
     "fileConfig": {
         "sourceRootPath": "D:/CodeStudy/javacode/code-generator-platform/code-generator-platform-maker/.temp/1/springboot-init",

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "name": "acm-template-pro-generator",
+    "projectName": "acm-template-pro-generator",
     "description": "ACM 示例模板生成器"
   },
   "originProjectPath": "../../../code-generator-platform-samples/springboot-init",

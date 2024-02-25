@@ -21,7 +21,7 @@ public class TemplateMakerTest {
     @Test
     public void testMakeTemplateBug1() {
         Meta meta = new Meta();
-        meta.setName("acm-template-generator");
+        meta.setProjectName("acm-template-generator");
         meta.setDescription("ACM 示例模板生成器");
 
         String projectPath = System.getProperty("user.dir");
@@ -53,7 +53,7 @@ public class TemplateMakerTest {
     @Test
     public void testMakeTemplateBug2() {
         Meta meta = new Meta();
-        meta.setName("acm-template-generator");
+        meta.setProjectName("acm-template-generator");
         meta.setDescription("ACM 示例模板生成器");
 
         String projectPath = System.getProperty("user.dir");

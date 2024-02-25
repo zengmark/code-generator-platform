@@ -17,10 +17,10 @@ public class MetaValidator {
 
     public static void doValidAndFill(Meta meta) {
         // 基础信息校验和默认值
-        String name = meta.getName();
+        String name = meta.getProjectName();
         if (StrUtil.isBlank(name)) {
             name = "code-generator";
-            meta.setName(name);
+            meta.setProjectName(name);
         }
 
         String description = meta.getDescription();

@@ -1,7 +1,7 @@
 package com.codegen.web.model.vo;
 
 import cn.hutool.json.JSONUtil;
-import com.codegen.web.meta.Meta;
+import com.codegen.maker.meta.Meta;
 import com.codegen.web.model.entity.Generator;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;

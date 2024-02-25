@@ -117,7 +117,7 @@ const GeneratorUsePage: React.FC = () => {
         <Row justify="space-between" gutter={[32, 32]}>
           <Col flex="auto">
             <Space size="large" align="center">
-              <Typography.Title level={4}>{data.name}</Typography.Title>
+              <Typography.Title level={4}>{data.projectName}</Typography.Title>
               {tagListView(data.tags)}
             </Space>
             <Typography.Paragraph>{data.description}</Typography.Paragraph>
@@ -161,7 +161,7 @@ const GeneratorUsePage: React.FC = () => {
                 }
 
                 return (
-                  <Form.Item label={model.fieldName} name={model.fieldName}>
+                  <Form.Item key={index} label={model.fieldName} name={model.fieldName}>
                     <Input placeholder={model.description} />
                   </Form.Item>
                 );

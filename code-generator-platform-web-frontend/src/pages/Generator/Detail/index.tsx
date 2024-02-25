@@ -107,7 +107,7 @@ const GeneratorDetailPage: React.FC = () => {
         <Row justify="space-between" gutter={[32, 32]}>
           <Col flex="auto">
             <Space size="large" align="center">
-              <Typography.Title level={4}>{data.name}</Typography.Title>
+              <Typography.Title level={4}>{data.projectName}</Typography.Title>
               {tagListView(data.tags)}
             </Space>
             <Typography.Paragraph>{data.description}</Typography.Paragraph>

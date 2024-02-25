@@ -1,24 +1,18 @@
 {
-    "name": "acm-template-generator",
+    "projectName": "acm-template-generator",
     "description": "ACM 示例模板生成器",
     "fileConfig": {
         "sourceRootPath": "D:/CodeStudy/javacode/code-generator-platform/code-generator-platform-maker/.temp/1735281524670181376/springboot-init",
         "files": [
             {
-                "inputPath": "src/main/java/com/yupi/springbootinit/common/BaseResponse.java.ftl",
-                "outputPath": "src/main/java/com/yupi/springbootinit/common/BaseResponse.java",
-                "type": "file",
-                "generateType": "dynamic"
-            },
-            {
-                "inputPath": "src/main/java/com/yupi/springbootinit/common/DeleteRequest.java",
-                "outputPath": "src/main/java/com/yupi/springbootinit/common/DeleteRequest.java",
+                "inputPath": "src/main/java/com/yupi/springbootinit/common/ErrorCode.java",
+                "outputPath": "src/main/java/com/yupi/springbootinit/common/ErrorCode.java",
                 "type": "file",
                 "generateType": "static"
             },
             {
-                "inputPath": "src/main/java/com/yupi/springbootinit/common/ErrorCode.java",
-                "outputPath": "src/main/java/com/yupi/springbootinit/common/ErrorCode.java",
+                "inputPath": "src/main/java/com/yupi/springbootinit/common/DeleteRequest.java",
+                "outputPath": "src/main/java/com/yupi/springbootinit/common/DeleteRequest.java",
                 "type": "file",
                 "generateType": "static"
             },
@@ -31,6 +25,12 @@
             {
                 "inputPath": "src/main/java/com/yupi/springbootinit/common/ResultUtils.java.ftl",
                 "outputPath": "src/main/java/com/yupi/springbootinit/common/ResultUtils.java",
+                "type": "file",
+                "generateType": "dynamic"
+            },
+            {
+                "inputPath": "src/main/java/com/yupi/springbootinit/common/BaseResponse.java.ftl",
+                "outputPath": "src/main/java/com/yupi/springbootinit/common/BaseResponse.java",
                 "type": "file",
                 "generateType": "dynamic"
             }

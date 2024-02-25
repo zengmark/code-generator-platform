@@ -21,7 +21,11 @@ public abstract class GenerateTemplate {
 
         // 0、输出根路径
         String projectPath = System.getProperty("user.dir");
-        String outputPath = projectPath + File.separator + "code-generator-platform-maker" + File.separator + "generated" + File.separator + meta.getName();
+        String outputPath = projectPath + File.separator + "code-generator-platform-maker" + File.separator + "generated" + File.separator + meta.getProjectName();
+        doGenerate(meta, outputPath);
+    }
+
+    public void doGenerate(Meta meta, String outputPath) throws TemplateException, IOException, InterruptedException {
         if (!FileUtil.exist(outputPath)) {
             FileUtil.mkdir(outputPath);
         }
@@ -89,7 +93,7 @@ public abstract class GenerateTemplate {
      */
     protected String buildJar(Meta meta, String outputPath) throws IOException, InterruptedException {
         JarGenerator.doGenerate(outputPath);
-        String jarName = String.format("%s-%s-jar-with-dependencies.jar", meta.getName(), meta.getVersion());
+        String jarName = String.format("%s-%s-jar-with-dependencies.jar", meta.getProjectName(), meta.getVersion());
         String jarPath = "target/" + jarName;
         return jarPath;
     }
@@ -116,8 +120,7 @@ public abstract class GenerateTemplate {
      */
     protected void generateCode(Meta meta, String outputPath) throws IOException, TemplateException {
         // 读取 resources 目录
-        ClassPathResource classPathResource = new ClassPathResource("");
-        String inputResourcePath = classPathResource.getAbsolutePath();
+        String inputResourcePath = "";
 
         // Java 包基础路径
         String outputBasePackage = meta.getBasePackage();

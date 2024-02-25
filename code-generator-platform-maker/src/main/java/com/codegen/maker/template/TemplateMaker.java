@@ -415,7 +415,7 @@ public class TemplateMaker {
 
     public static void main(String[] args) {
         Meta meta = new Meta();
-        meta.setName("acm-template-generator");
+        meta.setProjectName("acm-template-generator");
         meta.setDescription("ACM 示例模板生成器");
 
         String projectPath = System.getProperty("user.dir");
