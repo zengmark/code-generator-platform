@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>${basePackage}</groupId>
-    <artifactId>${name}</artifactId>
+    <artifactId>${projectName}</artifactId>
     <version>${version}</version>
 
     <dependencies>

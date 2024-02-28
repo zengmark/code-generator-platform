@@ -200,7 +200,7 @@ declare namespace API {
     modelConfig?: ModelConfig;
     picture?: string;
     projectName?: string;
-    status?: number;
+    projectStatus?: number;
     tags?: string[];
     updateTime?: string;
     user?: UserVO;

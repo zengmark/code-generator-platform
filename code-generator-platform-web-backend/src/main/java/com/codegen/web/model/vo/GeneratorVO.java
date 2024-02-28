@@ -71,7 +71,7 @@ public class GeneratorVO implements Serializable {
     /**
      * 状态
      */
-    private Integer status;
+    private Integer projectStatus;
 
     /**
      * 创建用户 id

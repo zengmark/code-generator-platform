@@ -10,7 +10,7 @@ import picocli.CommandLine.Command;
 /**
  * 命令执行器
  */
-@Command(name = "${name}", mixinStandardHelpOptions = true)
+@Command(name = "${projectName}", mixinStandardHelpOptions = true)
 public class CommandExecutor implements Runnable {
 
     private final CommandLine commandLine;
