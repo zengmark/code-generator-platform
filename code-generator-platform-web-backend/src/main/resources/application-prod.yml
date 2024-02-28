@@ -31,10 +31,10 @@ knife4j:
 # 对象存储
 cos:
   client:
-    accessKey: AKIDePbrqmMo9PuYI0hIqSvIcrxrrniS0Mj0
-    secretKey: WCviR4hT8jPErZp9seOmDc8kNwRwcQ88
-    region: ap-guangzhou
-    bucket: codegen-1322598588
+    accessKey: ***
+    secretKey: ***
+    region: ***
+    bucket: ***
 # xxl-job 配置
 xxl:
   job:
